@@ -10,4 +10,11 @@ public class MainClassTest {
         Assertions.assertTrue(actualNum == exceptedNum, "Полученное значение: " + actualNum +
                 ", - не равно ожидаемому: " + exceptedNum);
     }
+
+    @Test
+    public void testGetClassNumber(){
+        MainClass mc = new MainClass();
+        int num = mc.getClassNumber();
+        Assertions.assertTrue(num > 45, "Полученное число: " + num + ", не больше 45");
+    }
 }
